@@ -1,7 +1,6 @@
 # Mocking Spongebob
 
-This is a simple single-page application that lets you create a "Mocking
-Spongebob" meme.
+A simple SPA that lets you create a "Mocking Spongebob" meme.
 
 It uses vite and vanilla js.
 
