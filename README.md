@@ -10,4 +10,4 @@ It uses vite and vanilla js.
 
 ## License and Author
 
-[MIT &copy; Simon Lepel](http://simbo.mit-license.org/)
+[MIT &copy; Simon Lepel](https://simbo.mit-license.org/)
