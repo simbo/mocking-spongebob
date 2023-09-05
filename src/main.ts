@@ -1,9 +1,9 @@
 import './style.scss';
 
 import { createImage } from './lib/create-image';
+import { sanitizeText } from './lib/sanitize-text';
 import { updateView } from './lib/update-view';
 import { getURLParameters } from './lib/url-parameters';
-import { sanitizeText } from './lib/sanitize-text';
 
 const image = await createImage('./mocking-spongebob.jpg');
 const canvas = document.querySelector<HTMLCanvasElement>('#canvas')!;

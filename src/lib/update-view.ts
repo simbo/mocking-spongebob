@@ -1,7 +1,7 @@
-import { draw } from './draw';
 import { decorateText } from './decorate-text';
-import { setURLParameters } from './url-parameters';
+import { draw } from './draw';
 import { sanitizeText } from './sanitize-text';
+import { setURLParameters } from './url-parameters';
 
 export function updateView(
   text: string,
