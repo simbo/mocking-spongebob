@@ -13,6 +13,13 @@
         "printWidth": 80,
         "proseWrap": "always"
       }
+    },
+    {
+      "files": "*.html",
+      "options": {
+        "printWidth": 160,
+        "proseWrap": "always"
+      }
     }
   ]
 }
