@@ -1,7 +1,8 @@
-name: CI
+name: Deploy
 
 on:
-  pull_request:
+  push:
+    branches: [main]
 
 jobs:
   build:
@@ -27,3 +28,9 @@ jobs:
 
       - name: 👷‍♂️ Build
         run: npm run build
+
+      - name: 🚚 Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          clean: true
