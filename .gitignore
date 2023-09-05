@@ -1,0 +1,15 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Artifacts
+node_modules
+dist
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+
+# OS
+.DS_Store

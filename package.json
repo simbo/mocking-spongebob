@@ -1,0 +1,37 @@
+{
+  "name": "mocking-spongebob",
+  "description": "A simple SPA that lets you create a \"Mocking Spongebob\" meme.",
+  "private": true,
+  "version": "0.1.0",
+  "author": "Simon Lepel <simbo@simbo.de> (https://simbo.de/)",
+  "homepage": "https://simbo.codes/mocking-spongebob",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simbo/mocking-spongebob.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simbo/mocking-spongebob/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "upgrade": "npx --yes npm-check-updates -u -t minor && npx npm-check-updates --interactive --reject typescript,@types/node && npm i"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
+    "@types/node": "^18.17.14",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "prettier": "^3.0.3",
+    "rollup-plugin-html-minifier": "^2.0.0",
+    "sass": "^1.66.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  }
+}
