@@ -15,10 +15,14 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "vite",
     "build": "tsc && vite build",
+    "dev": "vite",
+    "format:fix": "prettier --write .",
+    "format": "prettier --check .",
+    "lint:fix": "eslint -c .eslintrc.json --ext .ts,.tsx,.js,.jsx --fix .",
+    "lint": "eslint -c .eslintrc.json --ext .ts,.tsx,.js,.jsx .",
     "preview": "vite preview",
+    "start": "npm run dev",
     "upgrade": "npx --yes npm-check-updates -u -t minor && npx npm-check-updates --interactive --reject typescript,@types/node && npm i"
   },
   "devDependencies": {
