@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🛠 Setup node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: 📦 Install
+        run: npm install
+
+      - name: 🕵️ Lint
+        run: npm run lint
+
+      - name: 👷‍♂️ Build
+        run: npm run build
+
+      - name: 🚚 Deploy
+        uses: JamesIves/github-pages-deploy-action@4
+        with:
+          folder: dist
+          clean: true
